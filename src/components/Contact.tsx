@@ -48,7 +48,7 @@ export default function Contact() {
                         className="flex flex-col justify-center h-full"
                     >
                         <div>
-                            <h2 className="text-5xl md:text-7xl font-extralight text-white tracking-tighter leading-[0.85] mb-6 md:mb-12">
+                            <h2 className="text-5xl md:text-7xl font-extralight text-white tracking-tighter leading-[0.85] mb-6 md:mb-10">
                                 Have a <br />
                                 <span className="font-medium tracking-tight text-[#F2C94C]">Project?</span>
                             </h2>
