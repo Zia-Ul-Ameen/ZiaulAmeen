@@ -46,7 +46,7 @@ export default function Navbar() {
                 </Link>
 
                 {/* Navigation Links */}
-                <div className="flex items-center gap-4 md:gap-8 text-white/70 text-sm font-medium uppercase tracking-widest transition-colors">
+                <div className="custom-font-size-navbar-text flex items-center gap-4 md:gap-8 text-white/70 text-sm font-medium uppercase tracking-widest transition-colors">
                     <Link href="#about" className="hover:text-white transition-colors underline-offset-4 hover:underline decoration-[#F2C94C]/70">About</Link>
                     <Link href="#works" className="hover:text-white transition-colors underline-offset-4 hover:underline decoration-[#F2C94C]/70">My Works</Link>
                     <Link href="#contact" className="hover:text-white transition-colors underline-offset-4 hover:underline decoration-[#F2C94C]/70">Contact</Link>

@@ -53,3 +53,14 @@ html.lenis body {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+@media (max-width: 425px) {
+  .custom-font-size-navbar-text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 380px) {
+  .custom-font-size-navbar-text {
+    font-size: 10px;
+  }
+}
