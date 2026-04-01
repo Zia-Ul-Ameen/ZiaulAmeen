@@ -25,7 +25,7 @@ export default function Navbar() {
 
     return (
         <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${showBackground
-            ? "bg-black/40 backdrop-blur-xl border-b border-white/5 py-3 md:py-4 px-6 md:px-12 lg:px-24"
+            ? "bg-black/40 backdrop-blur-xl border-b border-white/5 py-5 md:py-4 px-6 md:px-12 lg:px-24"
             : "mix-blend-difference py-6 px-6 md:px-12 lg:px-24"
             }`}>
             <div className="max-w-[1600px] mx-auto flex md:justify-between justify-center items-center">
