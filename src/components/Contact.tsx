@@ -131,7 +131,7 @@ export default function Contact() {
                                     transition={{ type: "tween", duration: 0.2, ease: "easeOut" }}
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className={`w-full h-14 rounded-full font-bold uppercase tracking-widest text-sm md:text-md transition-all flex items-center justify-center gap-3 ${status === 'success'
+                                    className={`w-full h-14 md:h-16 rounded-full font-bold uppercase tracking-widest text-sm md:text-md transition-all flex items-center justify-center gap-3 ${status === 'success'
                                         ? 'bg-green-500 text-white'
                                         : status === 'error'
                                             ? 'bg-red-500 text-white'
