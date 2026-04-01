@@ -20,13 +20,14 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ziaul-ameen.vercel.app/"),
   title: "Ziaul Ameen | Full-Stack Developer",
   description: "Portfolio of Ziaul Ameen, a Bangalore-based full-stack developer specializing in high-performance web applications using React, Next.js, and NestJS.",
   keywords: ["Ziaul Ameen", "Full-Stack Developer", "Next.js Portfolio", "React Developer", "Bangalore Developer"],
   openGraph: {
     title: "Ziaul Ameen | Full-Stack Developer",
     description: "Visual portfolio and engineering expertise of Ziaul Ameen.",
-    url: "https://ziaulameen.dev", // Placeholder URL
+    url: "https://ziaul-ameen.vercel.app/",
     siteName: "Ziaul Ameen Portfolio",
     images: [
       {
@@ -45,6 +46,9 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   manifest: "/manifest.json",
+};
+
+export const viewport = {
   themeColor: "#0a0a0a",
 };
 
