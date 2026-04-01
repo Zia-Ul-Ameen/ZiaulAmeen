@@ -31,7 +31,7 @@ const PROJECTS_DATA: Record<string, any> = {
     "planet-petly": {
         title: "Planet Petly",
         year: "2026",
-        role: "Lead Developer",
+        role: "Frontend Developer",
         description: "PLANET-FRIENDLY DOG WALK ESSENTIALS — BIODEGRADABLE WASTE BAGS AND CONVENIENT DISPENSERS FOR RESPONSIBLE PET OWNERS.",
         challenge: "Architecting a high-conversion, performant e-commerce brand presence from scratch, ensuring a lightweight frontend on a PHP-backed system.",
         solution: "Engineered a rapid Next.js frontend with Tailwind CSS for high performance. Implemented intuitive form validation using React Hook Form, integrating with PHP handlers to secure and streamline user submissions.",
