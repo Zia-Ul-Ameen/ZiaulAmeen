@@ -85,11 +85,11 @@ function ProjectCard({ project, index, total }: { project: any, index: number, t
             <div className="grid md:grid-cols-2 h-full min-h-[70vh]">
                 <div className="p-8 md:p-16 flex flex-col justify-between">
                     <div>
-                        <span className="text-white/30 font-mono text-sm mb-6 block uppercase tracking-widest italic font-bold">Project 0{index + 1}</span>
+                        <span className="text-white/30 font-mono text-sm mb-4 md:mb-6 block uppercase tracking-widest italic font-bold">Project 0{index + 1}</span>
                         <h3 className="text-4xl md:text-6xl font-normal text-white mb-6 uppercase tracking-tighter leading-[0.9]">
                             {project.title}
                         </h3>
-                        <div className="flex flex-wrap gap-2 mb-8">
+                        <div className="flex flex-wrap gap-2 mb-6 md:mb-8">
                             {project.tech?.map((t: string) => (
                                 <span key={t} className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] text-white/50 uppercase tracking-widest">{t}</span>
                             ))}
@@ -99,7 +99,7 @@ function ProjectCard({ project, index, total }: { project: any, index: number, t
                         </p>
                     </div>
 
-                    <div className="flex flex-wrap gap-4 mt-12">
+                    <div className="flex flex-wrap gap-4 mt-6 md:mt-12">
                         <Link href={`/projects/${project.slug}`} className="px-8 py-4 bg-white text-black font-bold uppercase text-xs tracking-widest rounded-full hover:bg-[#F2C94C] hover:text-black hover:-translate-y-1 transition-all duration-300 active:scale-95 text-center shadow-lg hover:shadow-[#F2C94C]/20">
                             Case Study
                         </Link>
