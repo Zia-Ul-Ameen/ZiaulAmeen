@@ -43,7 +43,7 @@ const services = [
         id: "04",
         title: "Performance Optimization",
         description: "Improving application performance through efficient rendering, asset optimization, and scalable backend integrations to ensure user experiences.",
-        skills: "ImageKit / AWS S3 / Performance Tuning",
+        skills: "S3 / ImageKit / Keystone / Strapi / Redis",
         icon: (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#F2C94C]">
                 <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

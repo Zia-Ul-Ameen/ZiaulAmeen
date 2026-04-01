@@ -65,7 +65,14 @@ export default function Contact() {
                                         testitziaul@gmail.com
                                     </span>
                                     <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[#F2C94C] group-hover:border-[#F2C94C] group-hover:text-black transition-all">
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="group-hover:rotate-45 transition-transform duration-300"
+                                        >
                                             <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
                                     </div>
@@ -85,7 +92,7 @@ export default function Contact() {
                         <form ref={formRef} onSubmit={handleSubmit} className="space-y-8 md:space-y-12">
                             <div className="grid md:grid-cols-2 gap-8">
                                 <div className="group relative">
-                                    <label className="block text-[10px] font-bold text-white/20 uppercase tracking-[0.2em] mb-4 group-focus-within:text-[#F2C94C] transition-colors">Your Name</label>
+                                    <label className="block text-xs font-bold text-white/20 uppercase tracking-[0.2em] mb-4 group-focus-within:text-[#F2C94C] transition-colors">Your Name</label>
                                     <input
                                         type="text"
                                         name="user_name"
@@ -95,7 +102,7 @@ export default function Contact() {
                                     />
                                 </div>
                                 <div className="group relative">
-                                    <label className="block text-[10px] font-bold text-white/20 uppercase tracking-[0.2em] mb-4 group-focus-within:text-[#F2C94C] transition-colors">Your Email</label>
+                                    <label className="block text-xs font-bold text-white/20 uppercase tracking-[0.2em] mb-4 group-focus-within:text-[#F2C94C] transition-colors">Your Email</label>
                                     <input
                                         type="email"
                                         name="user_email"
@@ -107,7 +114,7 @@ export default function Contact() {
                             </div>
 
                             <div className="group relative">
-                                <label className="block text-[10px] font-bold text-white/20 uppercase tracking-[0.2em] mb-4 group-focus-within:text-[#F2C94C] transition-colors">Brief Message</label>
+                                <label className="block text-xs font-bold text-white/20 uppercase tracking-[0.2em] mb-4 group-focus-within:text-[#F2C94C] transition-colors">Brief Message</label>
                                 <textarea
                                     name="message"
                                     required
@@ -119,22 +126,40 @@ export default function Contact() {
 
                             <div className="relative">
                                 <motion.button
-                                    whileHover={{ scale: 1.02 }}
+                                    whileHover="hover"
                                     whileTap={{ scale: 0.98 }}
+                                    transition={{ type: "tween", duration: 0.2, ease: "easeOut" }}
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className={`w-full h-16 rounded-[20px] font-black uppercase tracking-widest text-sm transition-all flex items-center justify-center gap-4 ${status === 'success'
+                                    className={`w-full h-16 rounded-full font-bold uppercase tracking-widest text-sm md:text-md transition-all flex items-center justify-center gap-3 ${status === 'success'
                                         ? 'bg-green-500 text-white'
                                         : status === 'error'
                                             ? 'bg-red-500 text-white'
-                                            : 'bg-[#F2C94C] text-black hover:shadow-[0_0_30px_rgba(242,201,76,0.3)]'
+                                            : 'text-black bg-[#F2C94C] hover:shadow-[0_10px_30px_rgba(242,201,76,0.2)]'
                                         } disabled:opacity-50`}
+                                    variants={{
+                                        hover: { scale: 1.01, y: -4 }
+                                    }}
                                 >
                                     {isSubmitting ? 'Sending...' : status === 'success' ? 'Sent Successfully' : status === 'error' ? 'Try Again' : 'Send Inquiry'}
                                     {!isSubmitting && status === 'idle' && (
-                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                        <motion.div
+                                            variants={{
+                                                hover: { rotate: 45, x: 2, y: -2 }
+                                            }}
+                                            transition={{ type: "spring", stiffness: 400, damping: 25 }}
+                                        >
+                                             <svg
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="group-hover:rotate-45 transition-transform duration-300"
+                                        >
+                                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
+                                        </motion.div>
                                     )}
                                 </motion.button>
 
@@ -167,7 +192,7 @@ export default function Contact() {
 
                     <div className="space-y-2">
                         <p className="text-[10px] font-black uppercase tracking-[1em] text-white/20">Thank you for scrolling</p>
-                        <h4 className="text-4xl md:text-6xl font-black text-white/5 uppercase tracking-tighter">Let's Build.</h4>
+                        <h4 className="text-4xl md:text-6xl font-black text-white/10 uppercase tracking-tight">Let's Build.</h4>
                     </div>
                 </div>
             </div>

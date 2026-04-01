@@ -29,6 +29,10 @@ body {
   padding: 0;
 }
 
+a, button, [role="button"], .cursor-pointer {
+  cursor: pointer !important;
+}
+
 html.lenis,
 html.lenis body {
   height: auto;
