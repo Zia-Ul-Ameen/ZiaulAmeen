@@ -58,22 +58,36 @@ export default function Contact() {
                                     I'm currently available for freelance projects and full-time opportunities. Let's build something extraordinary together.
                                 </p>
                                 <a
-                                    href="mailto:testitziaul@gmail.com"
+                                    href="mailto:ziaulameen.dev@gmail.com"
                                     className="group relative inline-flex items-center gap-4 text-2xl font-bold transition-all"
                                 >
                                     <span className="text-[#F2C94C] border-b-2 border-[#F2C94C]/20 group-hover:border-[#F2C94C] transition-all">
-                                        testitziaul@gmail.com
+                                        ziaulameen.dev@gmail.com
                                     </span>
-                                    <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[#F2C94C] group-hover:border-[#F2C94C] group-hover:text-black transition-all">
+                                    <div className="relative w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[#F2C94C] group-hover:border-[#F2C94C] group-hover:text-black transition-all duration-500 overflow-hidden">
+                                        {/* Envelope: Flies out */}
                                         <svg
                                             width="20"
                                             height="20"
                                             viewBox="0 0 24 24"
                                             fill="none"
                                             xmlns="http://www.w3.org/2000/svg"
-                                            className="group-hover:rotate-45 transition-transform duration-300"
+                                            className="absolute transition-all duration-500 ease-in-out transform group-hover:translate-x-8 group-hover:-translate-y-8 group-hover:scale-50 group-hover:opacity-0"
                                         >
-                                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                            <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                                        </svg>
+                                        {/* Paper Airplane: Flies in */}
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="absolute transition-all duration-500 ease-in-out transform -translate-x-8 translate-y-8 scale-50 opacity-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:scale-100 group-hover:opacity-100"
+                                        >
+                                            <path d="M22 2L11 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                         </svg>
                                     </div>
                                 </a>
@@ -149,16 +163,16 @@ export default function Contact() {
                                             }}
                                             transition={{ type: "spring", stiffness: 400, damping: 25 }}
                                         >
-                                             <svg
-                                            width="20"
-                                            height="20"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className="group-hover:rotate-45 transition-transform duration-300"
-                                        >
-                                            <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
+                                            <svg
+                                                width="20"
+                                                height="20"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                className="group-hover:rotate-45 transition-transform duration-300"
+                                            >
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                            </svg>
                                         </motion.div>
                                     )}
                                 </motion.button>
